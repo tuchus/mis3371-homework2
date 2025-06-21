@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Purrfect Physical Therapy - Patient Registration</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    window.onload = function() {
+      const now = new Date();
+      const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+      document.getElementById('date-today').textContent = now.toLocaleDateString('en-US', options);
+    };
+  </script>
+</head>
+<body>
+
+<!--
+Program name: patient-form.html
+Author: Ross Crawford
+Date created: 06/13/2025
+Date last edited: 06/13/2025
+Version: 1.0
+Description: Patient registration form for cat centric physical therapy website.
+-->
+
+<!-- Header / Banner -->
+<div id="header">
+  <img src="logo.png" alt="Caduceus Logo" width="60">
+  <h1>Purrfect Physical Therapy</h1>
+  <p>Today is: <span id="date-today"></span></p>
+</div>
+
+<!-- Form Section -->
+<div id="form-section">
+  <form action="thankyou.html">
+    <table>
+      <tr>
+        <td>First Name:</td>
+        <td><input type="text" name="first_name" maxlength="30" required></td>
+        <td>Middle Initial:</td>
+        <td><input type="text" name="middle_initial" maxlength="1"></td>
+        <td>Last Name:</td>
+        <td><input type="text" name="last_name" maxlength="30" required></td>
+      </tr>
+      <tr>
+        <td>Date of Birth:</td>
+        <td><input type="text" name="dob" placeholder="MM/DD/YYYY" required></td>
+        <td>SSN:</td>
+        <td><input type="password" name="ssn" maxlength="11" required></td>
+      </tr>
+      <tr>
+        <td>Address Line 1:</td>
+        <td colspan="3"><input type="text" name="address1" maxlength="30" required></td>
+      </tr>
+      <tr>
+        <td>Address Line 2:</td>
+        <td colspan="3"><input type="text" name="address2" maxlength="30"></td>
+      </tr>
+      <tr>
+        <td>City:</td>
+        <td><input type="text" name="city" maxlength="30" required></td>
+        <td>State:</td>
+        <td>
+			<select name="state" required>
+			  <option value="">--Select State--</option>
+			  <option value="AL">Alabama</option>
+			  <option value="AK">Alaska</option>
+			  <option value="AZ">Arizona</option>
+			  <option value="AR">Arkansas</option>
+			  <option value="CA">California</option>
+			  <option value="CO">Colorado</option>
+			  <option value="CT">Connecticut</option>
+			  <option value="DE">Delaware</option>
+			  <option value="FL">Florida</option>
+			  <option value="GA">Georgia</option>
+			  <option value="HI">Hawaii</option>
+			  <option value="ID">Idaho</option>
+			  <option value="IL">Illinois</option>
+			  <option value="IN">Indiana</option>
+			  <option value="IA">Iowa</option>
+			  <option value="KS">Kansas</option>
+			  <option value="KY">Kentucky</option>
+			  <option value="LA">Louisiana</option>
+			  <option value="ME">Maine</option>
+			  <option value="MD">Maryland</option>
+			  <option value="MA">Massachusetts</option>
+			  <option value="MI">Michigan</option>
+			  <option value="MN">Minnesota</option>
+			  <option value="MS">Mississippi</option>
+			  <option value="MO">Missouri</option>
+			  <option value="MT">Montana</option>
+			  <option value="NE">Nebraska</option>
+			  <option value="NV">Nevada</option>
+			  <option value="NH">New Hampshire</option>
+			  <option value="NJ">New Jersey</option>
+			  <option value="NM">New Mexico</option>
+			  <option value="NY">New York</option>
+			  <option value="NC">North Carolina</option>
+			  <option value="ND">North Dakota</option>
+			  <option value="OH">Ohio</option>
+			  <option value="OK">Oklahoma</option>
+			  <option value="OR">Oregon</option>
+			  <option value="PA">Pennsylvania</option>
+			  <option value="RI">Rhode Island</option>
+			  <option value="SC">South Carolina</option>
+			  <option value="SD">South Dakota</option>
+			  <option value="TN">Tennessee</option>
+			  <option value="TX">Texas</option>
+			  <option value="UT">Utah</option>
+			  <option value="VT">Vermont</option>
+			  <option value="VA">Virginia</option>
+			  <option value="WA">Washington</option>
+			  <option value="WV">West Virginia</option>
+			  <option value="WI">Wisconsin</option>
+			  <option value="WY">Wyoming</option>
+			  <option value="DC">District of Columbia</option>
+			  <option value="PR">Puerto Rico</option>
+			</select>
+        </td>
+        <td>Zip Code:</td>
+        <td><input type="text" name="zip" maxlength="10" required></td>
+      </tr>
+      <tr>
+        <td>Email:</td>
+        <td><input type="email" name="email" required></td>
+        <td>Phone:</td>
+        <td><input type="text" name="phone" placeholder="(xxx) xxx-xxxx" required></td>
+      </tr>
+      <tr>
+        <td>User ID:</td>
+        <td><input type="text" name="user_id" maxlength="20" required></td>
+      </tr>
+      <tr>
+        <td>Password:</td>
+        <td><input type="password" name="password" required></td>
+        <td>Re-enter Password:</td>
+        <td><input type="password" name="confirm_password" required></td>
+      </tr>
+      <tr>
+        <td>Current Symptoms:</td>
+        <td colspan="3">
+          <textarea name="symptoms" rows="3" cols="50" required></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td>Past Illnesses:</td>
+        <td colspan="5">
+          <input type="checkbox" name="illness" value="chickenpox"> Chickenpox
+          <input type="checkbox" name="illness" value="measles"> Measles
+          <input type="checkbox" name="illness" value="covid"> COVID-19
+          <input type="checkbox" name="illness" value="smallpox"> Smallpox
+          <input type="checkbox" name="illness" value="tetanus"> Tetanus
+        </td>
+      </tr>
+      <tr>
+        <td>Gender:</td>
+        <td colspan="3">
+          <input type="radio" name="gender" value="male"> Male
+          <input type="radio" name="gender" value="female"> Female
+          <input type="radio" name="gender" value="other"> Other
+        </td>
+      </tr>
+      <tr>
+        <td>Vaccinated:</td>
+        <td>
+          <input type="radio" name="vaccinated" value="yes"> Yes
+          <input type="radio" name="vaccinated" value="no"> No
+        </td>
+        <td>Has Insurance:</td>
+        <td>
+          <input type="radio" name="insurance" value="yes"> Yes
+          <input type="radio" name="insurance" value="no"> No
+        </td>
+      </tr>
+      <tr>
+        <td>Health Rating:</td>
+        <td colspan="3">
+          <input type="range" name="health" min="1" max="10">
+        </td>
+      </tr>
+      <tr>
+        <td colspan="6" style="text-align: center;">
+          <input type="reset" value="CLEAR AND START OVER">
+          <input type="submit" value="Submit">
+        </td>
+      </tr>
+    </table>
+  </form>
+</div>
+
+<!-- Footer -->
+<div id="footer">
+  <p>Purrfect Physical Therapy &nbsp;&nbsp; | &nbsp;&nbsp; 
+     <a href="#">Contact Us</a> &nbsp;&nbsp; | &nbsp;&nbsp;
+     Houston, TX 77005</p>
+</div>
+
+<!-- End of Document -->
+</body>
+</html>
