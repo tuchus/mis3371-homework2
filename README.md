@@ -17,7 +17,7 @@ This is an enhanced version of the patient registration form for a fictional cat
 - **Dynamic Date Display** – Shows today’s date in banner on page load
 
 ## Live Demo
-Hosted via W3Spaces:  
+Hosted via Github:  
 https://tuchus.github.io/mis3371-homework2/homework2.html
 
 ## Author
