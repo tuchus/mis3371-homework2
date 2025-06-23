@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -82,23 +83,12 @@
 </head>
 <body>
 
-<!--
-Program name: patient-form.html
-Author: Ross Crawford
-Date created: 06/13/2025
-Date last edited: 06/23/2025
-Version: 1.1
-Description: Patient registration form for cat-centric physical therapy website with validation and review.
--->
-
-<!-- Header / Banner -->
 <div id="header">
   <img src="logo.png" alt="Caduceus Logo" width="60">
   <h1>Purrfect Physical Therapy</h1>
   <p>Today is: <span id="date-today"></span></p>
 </div>
 
-<!-- Form Section -->
 <div id="form-section">
   <form action="thankyou.html">
     <table>
@@ -212,33 +202,25 @@ Description: Patient registration form for cat-centric physical therapy website 
       </tr>
       <tr>
         <td>Past Illnesses:</td>
-        <td colspan="5">
-          <input type="checkbox" name="illness" value="chickenpox"> Chickenpox
-          <input type="checkbox" name="illness" value="measles"> Measles
-          <input type="checkbox" name="illness" value="covid"> COVID-19
-          <input type="checkbox" name="illness" value="smallpox"> Smallpox
-          <input type="checkbox" name="illness" value="tetanus"> Tetanus
-        </td>
+        <td><input type="checkbox" name="illness" value="chickenpox"> Chickenpox</td>
+        <td><input type="checkbox" name="illness" value="measles"> Measles</td>
+        <td><input type="checkbox" name="illness" value="covid"> COVID-19</td>
+        <td><input type="checkbox" name="illness" value="smallpox"> Smallpox</td>
+        <td><input type="checkbox" name="illness" value="tetanus"> Tetanus</td>
       </tr>
       <tr>
         <td>Gender:</td>
-        <td colspan="3">
-          <input type="radio" name="gender" value="male"> Male
-          <input type="radio" name="gender" value="female"> Female
-          <input type="radio" name="gender" value="other"> Other
-        </td>
+        <td><input type="radio" name="gender" value="male"> Male</td>
+        <td><input type="radio" name="gender" value="female"> Female</td>
+        <td colspan="3"><input type="radio" name="gender" value="other"> Other</td>
       </tr>
       <tr>
         <td>Vaccinated:</td>
-        <td>
-          <input type="radio" name="vaccinated" value="yes"> Yes
-          <input type="radio" name="vaccinated" value="no"> No
-        </td>
+        <td><input type="radio" name="vaccinated" value="yes"> Yes</td>
+        <td><input type="radio" name="vaccinated" value="no"> No</td>
         <td>Has Insurance:</td>
-        <td>
-          <input type="radio" name="insurance" value="yes"> Yes
-          <input type="radio" name="insurance" value="no"> No
-        </td>
+        <td><input type="radio" name="insurance" value="yes"> Yes</td>
+        <td><input type="radio" name="insurance" value="no"> No</td>
       </tr>
       <tr>
         <td>Health Rating:</td>
@@ -248,7 +230,8 @@ Description: Patient registration form for cat-centric physical therapy website 
       </tr>
       <tr>
         <td colspan="6" style="text-align: center;">
-          <input type="reset" value="CLEAR AND START OVER">
+          <input type="reset" value="CLEAR AND START OVER" style="margin-right: 15px;">
+          <input type="button" value="Review" id="reviewBtn" style="margin-right: 15px;">
           <input type="submit" value="Submit">
         </td>
       </tr>
@@ -256,7 +239,6 @@ Description: Patient registration form for cat-centric physical therapy website 
   </form>
 </div>
 
-<!-- Footer -->
 <div id="footer">
   <p>Purrfect Physical Therapy &nbsp;&nbsp; | &nbsp;&nbsp; 
      <a href="#">Contact Us</a> &nbsp;&nbsp; | &nbsp;&nbsp;
@@ -265,3 +247,4 @@ Description: Patient registration form for cat-centric physical therapy website 
 
 </body>
 </html>
+```
