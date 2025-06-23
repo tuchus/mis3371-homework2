@@ -18,7 +18,7 @@ This is an enhanced version of the patient registration form for a fictional cat
 
 ## Live Demo
 Hosted via W3Spaces:  
-[https://tuchus.w3spaces.com/MIS3371/homework2.html](https://tuchus.w3spaces.com/MIS3371/homework2.html)
+https://tuchus.github.io/mis3371-homework2/homework2.html
 
 ## Author
 Ross Crawford  
